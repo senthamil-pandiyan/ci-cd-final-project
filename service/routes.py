@@ -2,10 +2,10 @@
 Controller for routes
 """
 from flask import jsonify, url_for, abort
-#from service import app
+from service import app
 from service.common import status
 
-app = Flask(__name__)
+
 COUNTER = {}
 
 
