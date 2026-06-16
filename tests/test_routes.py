@@ -7,8 +7,7 @@ Test cases can be run with the following:
 """
 from unittest import TestCase
 from service.common import status  # HTTP Status Codes
-from service.routes import reset_counters
-import app
+from service.routes import app, reset_counters
 
 
 ######################################################################
