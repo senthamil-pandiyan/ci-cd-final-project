@@ -24,7 +24,7 @@ jobs:
         flake8 service --count --max-complexity=10 --max-line-length=127 --statistics | tee -a cicd-github-validation
 
     - name: Run unit tests with nose
-      run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app >> cicd-github-validation
+      run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=service >> cicd-github-validation
     - name: upload log
       uses: actions/upload-artifact@v7
       with:
